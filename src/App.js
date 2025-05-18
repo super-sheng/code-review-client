@@ -5,9 +5,27 @@ const Footer = () => (
   <footer>
     <p>代码审查 AI 助手 | 基于 Mastra 构建</p>
     <div className="footer-links">
-      <a href="#" className="footer-link">关于</a>
-      <a href="#" className="footer-link">文档</a>
-      <a href="#" className="footer-link">GitHub</a>
+      <button 
+        className="footer-link" 
+        onClick={() => console.log("关于")}
+        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+      >
+        关于
+      </button>
+      <button 
+        className="footer-link" 
+        onClick={() => console.log("文档")}
+        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+      >
+        文档
+      </button>
+      <button 
+        className="footer-link" 
+        onClick={() => console.log("GitHub")}
+        style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+      >
+        GitHub
+      </button>
     </div>
   </footer>
 );
